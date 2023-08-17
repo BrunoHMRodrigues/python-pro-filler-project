@@ -9,13 +9,6 @@ def show_deepest_file(context):
         print(f"Deepest file: {deepest_file}")
 
 
-context = {
-    "all_files": [
-        "/home/trybe/Downloads/Trybe_logo.png",
-        "/home/trybe/Documents/aula/python/tests.py",
-    ]
-}
-
 def find_file_by_name(context, search_term, case_sensitive=True):
     if not search_term:
         return []
@@ -33,5 +26,3 @@ def find_file_by_name(context, search_term, case_sensitive=True):
             found_files.append(path)
 
     return found_files
-
-find_file_by_name(context, 'trybe', case_sensitive=False)
