@@ -21,7 +21,6 @@ def test_show_disk_usage_correct_behavior(context, capsys):
 
     captured = capsys.readouterr()
     output_lines = captured.out.strip().split("\n")
-    print(output_lines[0])
 
     assert "fav_song.txt" in output_lines[0]
     assert "songs.txt" in output_lines[1]
